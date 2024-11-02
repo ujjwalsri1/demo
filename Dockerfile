@@ -1,5 +1,5 @@
 # Use Maven to build the application
-FROM maven:3.9.8-amazoncorretto-17-al2023 AS build
+FROM maven:3.9-amazoncorretto-17-al2023 AS build
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
