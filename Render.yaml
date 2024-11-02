@@ -1,11 +1,9 @@
 services:
   - type: web
     name: demo
-    env: java
+    env: docker
     plan: free
-    buildCommand: |
-      apt-get update && apt-get install -y maven &&
-      mvn clean package
+    buildCommand: mvn clean package
     startCommand: java -jar target/demo-0.0.1-SNAPSHOT.jar
     envVars:
       - key: SPRING_PROFILES_ACTIVE
