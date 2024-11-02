@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: demo
-    env: docker  # Use Docker environment
-    plan: free
-    autoDeploy: true  # Automatically deploy on changes
