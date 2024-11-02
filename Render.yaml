@@ -1,12 +1,12 @@
 services:
   - type: web
-    name: my-spring-boot-app
+    name: demo
     env: java
     plan: free
     buildCommand: |
       apt-get update && apt-get install -y maven &&
       mvn clean package
-    startCommand: java -jar target/my-spring-boot-app-0.0.1-SNAPSHOT.jar
+    startCommand: java -jar target/demo-0.0.1-SNAPSHOT.jar
     envVars:
       - key: SPRING_PROFILES_ACTIVE
         value: prod
